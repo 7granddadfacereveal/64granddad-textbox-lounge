@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <title>
+    buy drugs
+  </title>
+  <body style="">
+    <style>
+      html, body {
+        background-image: linear-gradient(#eb5794, #000);
+        color: #ffb3d2;
+        font-family: cursive;
+      }
+      button {
+        background-color: #ffd9e9;
+        border: 0;
+        border-radius: 5px;
+        font-family: cursive;
+        box-shadow: 5px 5px #ffb3d2;
+      }
+      input {
+        background-color: #ffd9e9;
+        box-shadow: 5px 5px #ffb3d2;
+        font-family: cursive;
+        border-radius: 5px;
+        border: 0;
+      }
+      textarea {
+        background-color: #ffd9e9;
+        box-shadow: 5px 5px #ffb3d2;
+        border: 0;
+        border-radius: 5px;
+        font-family: cursive;
+      }
+    </style>
+    <div style="align-items: center;justify-content: center;display: flex;flex-direction: column">
+      <h1>
+        64granddads textbox lounge
+      </h1>
+      <textarea id="textbox"style="width: 370px; height: 200px">
+      </textarea>
+      <br>
+      <input id="textname" placeholder="file name ">
+      <br>
+      
+      <button style="height: 40px;width: 200px"onclick="download()">
+        download as text file
+      </button>
+      <p>
+        if this doesnt work you can try some troubleshooting options:
+      </p>
+      <!--good at coding-->
+      <div style="justify-content: center; align-items: center;display: flex;flex-direction: column">
+        <div style="justify-content: center; align-items: center;display: flex;flex-direction: column;line-height: 0px;margin-top: -10px;font-size: 13px">
+        <p>
+          1. check your wifi connection, downloading may not function if your wifi seems to be horrible
+        </p>
+        <br>
+        <p>
+          2. try restarting the page, some functions may not work sometimes and this can try to make it work.
+        </p>
+        <p>
+          3. if none of these work, type "among us" in the textarea and put an name for your file name, see if this works, or dont put an name
+        </p>
+      </div>
+      </div>
+      <br>
+      <br>
+    </div>
+    <script>
+      window.onload = function () {
+        document.getElementById("textbox").value = ""
+      }
+      let badwords = ["/", "\\", ":", "*", "?", "<", ">", "|"]
+      function download() {
+        let name = document.getElementById("textname").value
+        if (badwords.some(idkwhattonamethis => name.includes(idkwhattonamethis))) {
+          document.getElementById("textbox").value = "you cant use that monk xd";
+          setTimeout(function() {
+            let remembertextboxwidth = document.getElementById("textbox").style.width
+            let remembertextboxheight = document.getElementById("textbox").style.height
+            document.getElementById("textbox").style.height = "300px"
+            document.getElementById("textbox").style.width = "300px"
+            document.getElementById("textbox").value = `⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢰⡿⠋⠁⠀⠀⠈⠉⠙⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⣿⠇⠀⢀⣴⣶⡾⠿⠿⠿⢿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣀⣀⣸⡿⠀⠀⢸⣿⣇⠀⠀⠀⠀⠀⠀⠙⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⣾⡟⠛⣿⡇⠀⠀⢸⣿⣿⣷⣤⣤⣤⣤⣶⣶⣿⠇⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀
+⢀⣿⠀⢀⣿⡇⠀⠀⠀⠻⢿⣿⣿⣿⣿⣿⠿⣿⡏⠀⠀⠀⠀⢴⣶⣶⣿⣿⣿⣆
+⢸⣿⠀⢸⣿⡇⠀⠀⠀⠀⠀⠈⠉⠁⠀⠀⠀⣿⡇⣀⣠⣴⣾⣮⣝⠿⠿⠿⣻⡟
+⢸⣿⠀⠘⣿⡇⠀⠀⠀⠀⠀⠀⠀⣠⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠉⠀
+⠸⣿⠀⠀⣿⡇⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠉⠀⠀⠀⠀
+⠀⠻⣷⣶⣿⣇⠀⠀⠀⢠⣼⣿⣿⣿⣿⣿⣿⣿⣛⣛⣻⠉⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⣿⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⣿⣀⣀⣀⣼⡿⢿⣿⣿⣿⣿⣿⡿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠙⠛⠛⠛⠋⠁⠀⠙⠻⠿⠟⠋⠑⠛⠋⠀`
+          }, 1500 );
+          setTimeout(function() {
+            document.getElementById("textbox").value = "";
+            // wonder why this part of code doesnt work
+            document.getElementById("textbox").style.width = remembertextboxwidth
+            document.getElementById("textbox").style.height = remembertextboxheight
+          }, 3500);
+        } else {
+          if (document.getElementById("textbox").value == "") {
+            alert("input a text buddy");
+          } else {
+            if (document.getElementById("textbox").value == "among us") {
+              window.location.href = "https://www.youtube.com/watch?v=5F-JoaljP8E"
+            } else {
+              if (document.getElementById("textname").value == "") {
+                let content = document.getElementById("textbox").value
+          let blob = new Blob(["no name"], { type: "text/plain"});
+          let link = document.createElement("a");
+          link.href = URL.createObjectURL(blob);
+          link.download = name + ".txt";
+          link.click();
+              } else {
+                let content = document.getElementById("textbox").value
+          let blob = new Blob([content], { type: "text/plain"});
+          let link = document.createElement("a");
+          link.href = URL.createObjectURL(blob);
+          link.download = name + ".txt";
+          link.click();
+              }
+            }
+          }
+        }
+      }
+      
+    </script>
+  </body>
+</html>
