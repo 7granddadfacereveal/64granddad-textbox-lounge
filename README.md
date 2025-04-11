@@ -1,2 +1,1 @@
-# 64granddad-textbox-lounge
-hmm textbox
+https://7granddadfacereveal.github.io/64granddad-textbox-lounge/
